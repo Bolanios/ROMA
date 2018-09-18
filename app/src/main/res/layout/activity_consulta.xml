@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.watermelon.omarb.roma.View.ConsultaActivity">
+
+<include layout="@layout/actionbar_toolbar"/>
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/colorBackground"
+    android:padding="@dimen/paddingViews"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:theme="@style/TipografiaMenu"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".12"
+            android:layout_marginBottom="@dimen/marginbottom_menu"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="goDolor"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+            android:paddingVertical="@dimen/paddingvertical_menu">
+
+            <ImageView
+                android:id="@+id/imageViewConsulta1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/iconodolor1" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/paddingViews"
+                android:layout_toEndOf="@+id/imageViewConsulta1"
+                android:text="@string/dolor" />
+
+            <ImageView
+                android:id="@+id/iconSound1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/adelante1"
+                android:layout_marginEnd="@dimen/padding_buttom"
+                android:layout_marginStart="@dimen/padding_buttom"
+                app:srcCompat="@drawable/icons8_altavoz_24"
+                android:onClick="sound"
+                android:contentDescription="@string/dolor"/>
+
+            <ImageView
+                android:id="@+id/adelante1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/icons8_adelante_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".12"
+            android:layout_marginBottom="@dimen/marginbottom_menu"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="goFiebre"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+            android:paddingVertical="@dimen/paddingvertical_menu">
+
+            <ImageView
+                android:id="@+id/imageViewConsulta2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/iconofiebre1" />
+
+            <ImageView
+                android:id="@+id/iconSound2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padding_buttom"
+                android:layout_toStartOf="@id/adelante2"
+                android:contentDescription="@string/fiebre"
+                app:srcCompat="@drawable/icons8_altavoz_24"
+                android:onClick="sound"/>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/paddingViews"
+                android:layout_toEndOf="@+id/imageViewConsulta2"
+                android:text="@string/fiebre" />
+
+            <ImageView
+                android:id="@+id/adelante2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/icons8_adelante_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".12"
+            android:layout_marginBottom="@dimen/marginbottom_menu"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="goNauseas"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+            android:paddingVertical="@dimen/paddingvertical_menu">
+
+            <ImageView
+                android:id="@+id/imageViewConsulta3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/iconovomito1" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/paddingViews"
+                android:layout_toEndOf="@+id/imageViewConsulta3"
+                android:text="@string/nau_vom" />
+            <ImageView
+                android:id="@+id/iconSound3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padding_buttom"
+                android:layout_toStartOf="@id/adelante3"
+                android:contentDescription="@string/nau_vom"
+                app:srcCompat="@drawable/icons8_altavoz_24"
+                android:onClick="sound"/>
+
+
+            <ImageView
+                android:id="@+id/adelante3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/icons8_adelante_24" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".12"
+            android:layout_marginBottom="@dimen/marginbottom_menu"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="goDiarrrea"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+            android:paddingVertical="@dimen/paddingvertical_menu">
+
+            <ImageView
+                android:id="@+id/iconSound4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padding_buttom"
+                android:layout_toStartOf="@id/adelante4"
+                android:contentDescription="@string/diarrea"
+                app:srcCompat="@drawable/icons8_altavoz_24"
+                android:onClick="sound"/>
+
+            <ImageView
+                android:id="@+id/imageViewConsulta4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/iconodiarrea1" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/paddingViews"
+                android:layout_toEndOf="@+id/imageViewConsulta4"
+                android:text="@string/diarrea" />
+
+            <ImageView
+                android:id="@+id/adelante4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/icons8_adelante_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".12"
+            android:layout_marginBottom="@dimen/marginbottom_menu"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/ripple_effect"
+            android:onClick="goHipertension"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+            android:paddingVertical="@dimen/paddingvertical_menu">
+
+            <ImageView
+                android:id="@+id/iconSound5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padding_buttom"
+                android:layout_toStartOf="@id/adelante5"
+                android:contentDescription="@string/hipertension"
+                app:srcCompat="@drawable/icons8_altavoz_24"
+                android:onClick="sound"/>
+
+            <ImageView
+                android:id="@+id/imageViewConsulta5"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/iconohipertension1" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/paddingViews"
+                android:layout_toEndOf="@+id/imageViewConsulta5"
+                android:text="@string/hipertension" />
+
+            <ImageView
+                android:id="@+id/adelante5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/icons8_adelante_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".12"
+            android:layout_marginBottom="@dimen/marginbottom_menu"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="goDiabetes"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+            android:paddingVertical="@dimen/paddingvertical_menu">
+
+            <ImageView
+                android:id="@+id/iconSound6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padding_buttom"
+                android:layout_toStartOf="@id/adelante6"
+                android:contentDescription="@string/diabetes"
+                android:onClick="sound"
+                app:srcCompat="@drawable/icons8_altavoz_24" />
+
+            <ImageView
+                android:id="@+id/imageViewConsulta6"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/iconodiabetes1" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/paddingViews"
+                android:layout_toEndOf="@+id/imageViewConsulta6"
+                android:text="@string/diabetes" />
+
+            <ImageView
+                android:id="@+id/adelante6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/icons8_adelante_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".12"
+            android:layout_marginBottom="@dimen/marginbottom_menu"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/ripple_effect"
+            android:onClick="goObesidad"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+            android:paddingVertical="@dimen/paddingvertical_menu">
+
+            <ImageView
+                android:id="@+id/iconSound7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padding_buttom"
+                android:layout_toStartOf="@id/adelante7"
+                android:contentDescription="@string/obesidad"
+                app:srcCompat="@drawable/icons8_altavoz_24"
+                android:onClick="sound"/>
+
+            <ImageView
+                android:id="@+id/imageViewConsulta7"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/iconoobesidad1" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/paddingViews"
+                android:layout_toEndOf="@+id/imageViewConsulta7"
+                android:text="@string/obesidad" />
+
+            <ImageView
+                android:id="@+id/adelante7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/icons8_adelante_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".12"
+            android:layout_marginBottom="@dimen/marginbottom_menu"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/ripple_effect"
+            android:onClick="goEmbarazo"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+            android:paddingVertical="@dimen/paddingvertical_menu">
+
+            <ImageView
+                android:id="@+id/iconSoun8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padding_buttom"
+                android:layout_toStartOf="@id/adelante8"
+                android:contentDescription="@string/embarazo"
+                app:srcCompat="@drawable/icons8_altavoz_24"
+                android:onClick="sound"/>
+
+            <ImageView
+                android:id="@+id/imageViewConsulta8"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/iconoembarazo1" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/paddingViews"
+                android:layout_toEndOf="@+id/imageViewConsulta8"
+                android:text="@string/embarazo" />
+
+            <ImageView
+                android:id="@+id/adelante8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/icons8_adelante_24" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

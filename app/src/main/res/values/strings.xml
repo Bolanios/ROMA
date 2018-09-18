@@ -1,0 +1,353 @@
+<resources>
+    <string name="app_name">RoMa</string>
+    <string name="action_settings">Settings</string>
+    <string name="logo">logo</string>
+    <string name="mainText1">REVIEW OAXACAN MEDICAL ALPHABET</string>
+    <string name="mainText2">RoMa es un facilitador de la comunicación, diseñado para todo aquel profesional de la salud, que brinda atención médica a grupos indígenas.</string>
+    <string name="mainText3">Idea Original</string>
+    <string name="mainText4">Dr. Paúl Robledo Madrid</string>
+    <string name="mainText5">Watermelon Solutions</string>
+    <string name="mainBottom">Inicio</string>
+    <string name="menu_datos">Datos Generales</string>
+    <string name="menu_consulta">Motivo de la Consulta</string>
+    <string name="menu_exploracion">Exploración Física</string>
+    <string name="menu_diag">Diagnóstico y Tratamiento</string>
+    <string name="toolbar_tittle_menuprincipal">Menú Principal</string>
+    <string name="hint_age">Edad</string>
+    <string name="hint_sex">Sexo</string>
+    <string name="toolbar_tittle_datos">Datos Generales</string>
+    <string name="hint_peso">Peso</string>
+    <string name="hint_talla">Talla</string>
+    <string name="alergias">Alergias</string>
+    <string name="iconsound">icono sonido</string>
+    <string name="hint_name">Nombre Completo</string>
+    <string name="hint_ocupacion">Ocupación</string>
+    <string name="guardar">Guardar</string>
+    <string name="hint_alergias">Alergias</string>
+    <string name="toolbar_tittle_consulta">¿Motivo de la Consulta?</string>
+    <!--    CONSULTA    -->
+    <string name="dolor">Dolor</string>
+    <string name="fiebre">Fiebre</string>
+    <string name="nau_vom">Náuseas y Vomito</string>
+    <string name="diarrea">Diarrea</string>
+    <string name="hipertension">Hipertensión</string>
+    <string name="obesidad">Obesidad</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="embarazo">Control de embarazo</string>
+    <!--    PREGUNTAS GENERICAS    -->
+    <string name="preg_g1_desde">¿Desde cuándo?</string>
+    <string-array name="resp_preg_g1_desde">
+        <item>1–3 Días</item>
+        <item>1 Semana</item>
+        <item>1 Mes</item>
+    </string-array>
+    <string name="preg_g2_horario">¿En qué horario?</string>
+    <string-array name="resp_preg_g2_horario">
+        <item>Mañana</item>
+        <item>Tarde</item>
+        <item>Noche</item>
+    </string-array>
+    <string-array name="resp_si_no">
+        <item>Sí</item>
+        <item>No</item>
+    </string-array>
+    <string name="preg_g3_sintomas">¿Otros síntomas?</string>
+
+
+    <!--    PREGUNTAS REUTILIZABLEZ  -->
+    <string name="preg_motivos_dolor">¿Motivo del dolor?</string>
+    <string name="preg_nivel_intensidad">Nivel de intensidad</string>
+    <string name="resp_nivel_intensidad">Del 1 al 10</string>
+    <string name="preg_duracion_dolor">¿Cuánto le dura el dolor?</string>
+    <string-array name="resp_duracion_dolor">
+        <item>30 min</item>
+        <item>1 hora</item>
+        <item>Mas de 1 Hora</item>
+    </string-array>
+    <string name="preg_limitacion_movimiento">¿Tiene limitación de movimiento?</string>
+    <string name="preg_tanto_duele">¿Qué tanto le duele?</string>
+    <string name="preg_aumenta_dolor">El dolor aumenta al</string>
+    <string name="preg_disminuye_dolor">El dolor disminuye al</string>
+
+    <string name="preg_f_riesgo_fiebre">¿Algún factor de riesgo?</string>
+    <string name="preg_factor_fiebre">¿Qué factor?</string>
+    <string name="otras_enfermedades">Otras Enfermedades</string>
+    <string name="preg_habitos_nau">Alteraciones en sus habitos alimenticios</string>
+    <string name="preg_n_evacuaciones">Número de evacuaciones al dia</string>
+    <string name="preg_fecalismo">Fecalismo al aire libre</string>
+    <string name="diarrea_preg_alim__mal_cocidos">¿Consumió alimentos mal cocidos?</string>
+    <string name="hipertension_preg">¿Es usted hipertenso?</string>
+    <string name="hipertension_preg_alimentacion_consume">¿En sus alimentos consume?</string>
+
+
+    <string name="toolbar_tittle_partes">¿En que parte del Cuerpo?</string>
+    <string name="cabeza">Cabeza</string>
+    <string name="cuello">Cuello</string>
+    <string name="torax">Toráx</string>
+    <string name="abdomen">Abdomen</string>
+    <string name="genitourinario">Génitourinario</string>
+    <string name="extremidades">Extremidades</string>
+    <string name="notas">Notas</string>
+    <string name="preg_embarazo_inicio_vida">¿Cuándo inicio su vida sexual?</string>
+    <string name="preg_embarazo_ultima_regla">¿Fecha de su ultima regla?</string>
+    <string name="preg_embarazo_otros_embarazos">¿Ha tenido otros embarazos?</string>
+    <string name="preg_embarazo_cuantos">¿Cuántos?</string>
+    <string name="preg_embarazo_complicaciones">¿Ha tenido alguna complicación en sus embarazos?</string>
+    <string name="preg_embarazo_complicaciones_hint">¿Complicaciónes en sus embarazos?</string>
+    <string name="preg_embarazo_acido_folico">¿Toma ácido fólico?</string>
+
+
+    <array name="sexo">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </array>
+
+
+    <!--    DOLOR DE CABEZA  -->
+    <string-array name="cabeza_resp_sintomas">
+        <item>Vertigo</item>
+        <item>Zumbido</item>
+        <item>Dolor</item>
+        <item>Otros</item>
+    </string-array>
+    <!--    DOLOR DE CUELLO  -->
+    <string-array name="cuello_resp_motivos">
+        <item>Caídas</item>
+        <item>Golpes</item>
+        <item>Ejercicios</item>
+    </string-array>
+    <!--    DOLOR DE TORAX  -->
+    <string-array name="torax_resp_sintomas">
+        <item>Dificultad para Respirar</item>
+        <item>Tos Seca</item>
+        <item>Tos Expectorante</item>
+        <item>Tos y Sangrado</item>
+        <item>Taquicardía</item>
+        <item>Dolor Parrilla Costal</item>
+        <item>Otros</item>
+    </string-array>
+    <!--    DOLOR DE ABDOMEN  -->
+    <string-array name="resp_tanto_duele">
+        <item>Mucho</item>
+        <item>poco</item>
+        <item>muy poco</item>
+    </string-array>
+    <string-array name="abdomen_resp_aumenta">
+        <item>Estar de pie</item>
+        <item>Al Sentarse</item>
+        <item>En cualquier posición</item>
+    </string-array>
+    <string-array name="abdomen_resp_disminuye">
+        <item>Estar de pie</item>
+        <item>Al Sentarse</item>
+        <item>En cualquier posición</item>
+    </string-array>
+
+    <!--    DOLOR DE GENITO URINARIO  -->
+    <string-array name="genito_resp_sintomas">
+        <item>Dolor al orinar</item>
+        <item>Irritación al orinar</item>
+        <item>Sangrado al Orinar</item>
+        <item>Dolor al Evacuar</item>
+        <item>Irritación al Evacuar</item>
+        <item>Sangrado al Evacuar</item>
+    </string-array>
+    <!-- DOLOR EN EXTREMIDADES    -->
+    <string-array name="extremidades_resp_motivos">
+        <item>Caídas</item>
+        <item>Golpes</item>
+        <item>Ejercicios</item>
+    </string-array>
+
+    <!-- _________________________________________________________________________________ -->
+
+    <!--    FIEBRE -->
+    <string-array name="fiebre_resp_sintomas">
+        <item>Malestar General</item>
+        <item>Poca tolerancia a la vía oral</item>
+    </string-array>
+    <string-array name="fiebre_resp_exposiciones">
+        <item>Piquete de zancudo</item>
+        <item>Dengue</item>
+    </string-array>
+    <!-- _________________________________________________________________________________ -->
+
+    <!--    NAUSEAS Y VOMITO
+        1°- preg_g1_desde
+        2°- preg_g2_horario
+        3°- preg_g3_sintomas -->
+    <string-array name="nauseas_resp_sintomas">
+        <item>Vomito</item>
+        <item>Diarrea</item>
+        <item>Dolor Abdominal</item>
+        <item>Sospecha de Embarazo</item>
+    </string-array>
+
+    <string-array name="nauseas_resp_habitos">
+        <item>No come</item>
+        <item>Come mucho</item>
+    </string-array>
+    <!--    DIARREA
+            1°- preg_g1_desde
+            2°- preg_g2_horario
+            3°- preg_veces_dia
+            4°- preg_g3_sintomas
+            5°- diarrea_preg_nose
+            6°- diarrea_preg_alim_cocidos
+            7°- diarrea_preg_que_tantos_alimentos   -->
+
+    <string-array name="diarrea_resp_sintomas">
+        <item>Con Moco</item>
+        <item>Con Sangre</item>
+        <item>Dolor Abdominal</item>
+        <item>Mal Olor</item>
+        <item>Otros</item>
+    </string-array>
+
+
+    <!-- _________________________________________________________________________________ -->
+
+    <!--    HIPERTENSION
+        1°- hipertension_preg_fam
+        2°- hipertension_preg_diag
+        3°- preg_g1_desde
+        4°- hipertension_preg_tratamiento
+        5°- hipertension_preg_alimentacion
+        6°- hipertension_preg_alimentacion_sal  -->
+    <string name="hipertension_preg_fam">¿Familiares con hipertensión?</string>
+    <string name="hipertension_preg_diag">¿Es usted hipertenso?</string>
+    <string name="hipertension_preg_tratamiento">Tratamiento Habitual</string>
+    <string name="hipertension_preg_alimentacion">¿Cómo es su alimentación?</string>
+    <string name="hipertension_preg_alimentacion_sal">¿En sus alimentos consume?</string>
+
+    <string-array name="hipertension_resp_alimentacion">
+        <item>Buena</item>
+        <item>Regular</item>
+        <item>Mala</item>
+    </string-array>
+    <string-array name="hipertension_resp_consume">
+        <item>Mucha sal</item>
+        <item>Poca sal</item>
+        <item>Nada de sal</item>
+    </string-array>
+    <!-- _________________________________________________________________________________ -->
+
+    <!--    DIABETES
+        1°- diabetes_preg_fam
+        2°- diabetes_preg_diag
+        3°- preg_g1_desde
+        4°- daibetes_preg_tratamiento
+        5°- daibetes_preg_alimentacion  -->
+    <string name="diabetes_preg_fam">¿Familiares con diabetes?</string>
+    <string name="diabetes_preg_diag">¿Es usted diabético?</string>
+    <string name="diabetes_preg_tratamiento">¿Cuál es su tratamiento?</string>
+    <string name="diabetes_preg_alimentacion">¿Cómo considera su alimentación?</string>
+    <string name="diabetes_preg_desde">¿Desde cuándo es diabético?</string>
+
+
+    <!-- _________________________________________________________________________________ -->
+
+    <!--    OBESIDAD
+        1°- obesidad_preg_fam
+        2°- obesidad_preg_sedentario
+        3°- obesidad_preg_enf_asociadas
+        4°- obesidad_preg_diagnostico
+        5°- obesidad_preg_diagnostico_2
+        6°- obesidad_preg_alimentacion
+        7°- obesidad_preg_nivel_obsidad  -->
+    <string name="obesidad_preg_fam">¿Familiares con obesidad?</string>
+    <string name="obesidad_preg_sedentario">¿Es usted sedentario?</string>
+    <string name="obesidad_preg_desde">¿Desde cuándo fue diagnosticado con obesidad?</string>
+    <string name="obesidad_preg_enf_asociadas">¿Alguna enfermedades asociada?</string>
+    <string name="obesidad_preg_diagnostico">¿Tiene diagnostico?</string>
+    <string name="obesidad_preg_diagnostico_2">¿Tipo de diagnóstico?</string>
+    <string-array name="obesidad_resp_diagnostico_2">
+        <item>Nutricional</item>
+        <item>Psicológico</item>
+        <item>Farmacológico</item>
+        <item>Quirúrgico</item>
+    </string-array>
+    <string-array name="obesidad_resp_nivel">
+        <item>Clase I </item>
+        <item>Clase II</item>
+        <item>Clase III</item>
+    </string-array>
+    <string name="obesidad_tratamiento">Tipo de tratamiento actual</string>
+    <string name="obesidad_preg_alimentacion">¿Cómo es su alimentación?</string>
+    <string name="obesidad_preg_nivel_obesidad">Nivel de Obesidad</string>
+    <string name="obesidad_preg_diag">¿Es usted sedentario?</string>
+    <string name="obesidad_preg_tratamiento">Tipo de tratamiento actual</string>
+    <string name="obesidad_tiempo">¿Hace que tiempo fue diagnosticado con obesidad?</string>
+    <string name="hipertension_preg_desde">Desde cuándo es hipertenso</string>
+    <string name="preg_limitacion_movimiento_hint">¿Limitacion de movimiento?</string>
+    <string name="diarrea_preg_alim__mal_cocidos_hint">¿Alimentos mal cocidos?</string>
+    <string name="hipertension_preg_fam_hint">¿Familiares hipertensos?</string>
+    <string name="preg_embarazo_inicio_vida_hint">¿Inicio de su vida sexual?</string>
+    <string name="preg_embarazo_otros_embarazos_hint">¿Otros embarazos?</string>
+    <string name="obesidad_tiempo_hint">¿Cuando fue diagnosticado?</string>
+    <string name="diabetes_preg_alimentacion_hint">¿Su alimentacion es?</string>
+    <string name="hipertension_preg_alimentacion_consume_hint">¿Consume alimentos con?</string>
+    <string name="terminarConsulta">Finalizar Atención Médica</string>
+    <!-- _________________________________________________________________________________ -->
+
+    <!--  EMBARAZO-->
+
+    <string-array name="embarazo_resp_complicaciones">
+        <item>Aborto</item>
+        <item>Bebé prematuro</item>
+        <item>Bebé muerto</item>
+        <item>Otros</item>
+    </string-array>
+    <string-array name="embarazo_resp_sintomas">
+        <item>Sangrado</item>
+        <item>Percibe movimientos del bebé</item>
+        <item>Dolor de cabeza y zumbido</item>
+    </string-array>
+
+
+    <string-array name="icon1">
+        <item>@drawable/icons8_altavoz_24</item>
+    </string-array>
+
+    <string-array name="icon2">
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+    </string-array>
+    <string-array name="icon3">
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+    </string-array>
+
+    <string-array name="icon4">
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+    </string-array>
+    <string-array name="icon5">
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+    </string-array>
+    <string-array name="icon6">
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+    </string-array>
+    <string-array name="icon7">
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+        <item>@drawable/icons8_altavoz_24</item>
+    </string-array>
+</resources>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.watermelon.omarb.roma.View.DatosGeneralesActivity">
+
+    <include layout="@layout/actionbar_toolbar"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/colorBackground"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/paddingViews"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/paddingvertical_menu_edittext">
+                    <ImageView
+                        android:id="@+id/sound_datos_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icons8_altavoz_24"
+                        android:onClick="sound"
+                        android:theme="@style/iconAltavoz"
+                        android:contentDescription="@string/hint_name"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextInputEditText_Datos">
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/input_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:paddingLeft="@dimen/paddingViews"
+                            android:hint="@string/hint_name">
+                        </android.support.design.widget.TextInputEditText>
+
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/paddingvertical_menu_edittext">
+
+                    <ImageView
+                        android:id="@+id/sound_datos_ocupacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/hint_ocupacion"
+                        android:onClick="sound"
+                        android:src="@drawable/icons8_altavoz_24"
+                        android:theme="@style/iconAltavoz" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_ocupacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextInputEditText_Datos">
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/input_ocupacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:paddingLeft="@dimen/paddingViews"
+                            android:hint="@string/hint_ocupacion">
+                        </android.support.design.widget.TextInputEditText>
+
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/paddingvertical_menu_edittext"
+                    android:weightSum="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5">
+                        <ImageView
+                            android:id="@+id/sound_datos_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icons8_altavoz_24"
+                            android:theme="@style/iconAltavoz"
+                            android:contentDescription="@string/hint_age"
+                            android:onClick="sound"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/TextInputEditText_Datos">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/age"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/hint_age"
+                                android:paddingLeft="@dimen/paddingViews"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:hint="@string/hint_sex"
+                        app:met_floatingLabel="normal"
+                        app:met_baseColor="@color/colorPrimary"
+                        app:met_primaryColor="@color/colorPrimaryLight"
+                        app:met_errorColor="#ddaa00"
+                        android:theme="@style/TextInputEditText_Datos"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/TextInputEditText_Datos">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/peso"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/hint_peso"
+                                android:paddingLeft="@dimen/paddingViews"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/TextInputEditText_Datos">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/talla"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/hint_talla"
+                                android:paddingLeft="@dimen/paddingViews"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/paddingvertical_menu_edittext"
+                    >
+                <ImageView
+                    android:id="@+id/sound_datos_alergias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icons8_altavoz_24"
+                    android:theme="@style/iconAltavoz_Alergias"
+                    android:contentDescription="@string/hint_alergias"
+                    android:onClick="sound"
+                    />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_alergias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextInputEditText_MultiLine">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/alergias"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_multiline"
+                            android:gravity="top|left"
+                            android:hint="@string/hint_alergias"
+                            android:inputType="textMultiLine"
+                            android:maxEms="10"
+                            android:minLines="5"
+                            android:paddingStart="@dimen/paddingViews"
+                            android:scrollHorizontally="false" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:layout_marginTop="@dimen/paddingvertical_menu"
+                    android:onClick="onGuardar"
+                    android:text="@string/guardar"
+                    android:theme="@style/buttonTheme" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

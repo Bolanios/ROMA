@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".View.PartesCuerpoActivity">
+
+<include layout="@layout/actionbar_toolbar" />
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="@dimen/paddingViews"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:padding="@dimen/paddingvertical_menu">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".33"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/paddingvertical_menu">
+
+                <ImageButton
+                    android:id="@+id/imageCabeza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBackground"
+                    android:contentDescription="@string/cabeza"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/iconocabeza1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goCabeza"
+                    android:text="@string/cabeza"
+                    android:textSize="12sp"
+                    android:theme="@style/TipografiaPartes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".33"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/paddingvertical_menu">
+
+                <ImageButton
+                    android:id="@+id/imageCuello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBackground"
+                    android:contentDescription="@string/cuello"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/iconocuello1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goCuello"
+                    android:text="@string/cuello"
+                    android:textSize="12sp"
+                    android:theme="@style/TipografiaPartes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".33"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/paddingvertical_menu">
+
+                <ImageButton
+                    android:id="@+id/imageTorax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBackground"
+                    android:contentDescription="@string/torax"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/iconotorax1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goTorax"
+                    android:text="@string/torax"
+                    android:textSize="12sp"
+                    android:theme="@style/TipografiaPartes" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".33"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/paddingvertical_menu">
+
+                <ImageButton
+                    android:id="@+id/imageAbdomen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBackground"
+                    android:contentDescription="@string/abdomen"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/iconoabdomen1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goAbdomen"
+                    android:text="@string/abdomen"
+                    android:textSize="12sp"
+                    android:theme="@style/TipografiaPartes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".33"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/paddingvertical_menu">
+
+                <ImageButton
+                    android:id="@+id/imageGenito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBackground"
+                    android:contentDescription="@string/genitourinario"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/iconogenitourinario1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goGenito"
+                    android:text="@string/genitourinario"
+                    android:textSize="12sp"
+                    android:theme="@style/TipografiaPartes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".33"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/paddingvertical_menu">
+
+                <ImageButton
+                    android:id="@+id/imageExtremidades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBackground"
+                    android:baselineAligned="false"
+                    android:contentDescription="@string/extremidades"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/iconoextremidades1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goExtremidades"
+                    android:text="@string/extremidades"
+                    android:textSize="12sp"
+                    android:theme="@style/TipografiaPartes" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

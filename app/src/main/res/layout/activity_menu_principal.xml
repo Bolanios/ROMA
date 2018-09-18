@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.watermelon.omarb.roma.View.MenuPrincipalActivity">
+
+    <include layout="@layout/actionbar_toolbar"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:padding="@dimen/paddingViews"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:theme="@style/TipografiaMenu"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="@dimen/marginbottom_menu"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="goDatosGenerales"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+                android:paddingVertical="@dimen/paddingvertical_menu">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/iconodatos1" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/paddingViews"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:text="@string/menu_datos" />
+
+                <ImageView
+                    android:id="@+id/adelante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/icons8_adelante_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="@dimen/marginbottom_menu"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="goConsulta"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+                android:paddingVertical="@dimen/paddingvertical_menu">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/iconoconsulta1" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/paddingViews"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:text="@string/menu_consulta" />
+
+                <ImageView
+                    android:id="@+id/adelante2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/icons8_adelante_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="@dimen/marginbottom_menu"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="goExploracion"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+                android:paddingVertical="@dimen/paddingvertical_menu">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/iconoexploracion1" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/paddingViews"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:text="@string/menu_exploracion" />
+
+                <ImageView
+                    android:id="@+id/adelante3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/icons8_adelante_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="@dimen/marginbottom_menu"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="goDiagTra"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+                android:paddingVertical="@dimen/paddingvertical_menu">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/iconotratamiento1" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/paddingViews"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:text="@string/menu_diag" />
+
+                <ImageView
+                    android:id="@+id/adelante4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/icons8_adelante_24" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingvertical_menu"
+                android:background="@drawable/button_background"
+                android:onClick="onGuardar"
+                android:text="@string/terminarConsulta"
+                android:theme="@style/buttonTheme"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/background_menuprincipal"
+        android:padding="@dimen/padding_menu"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:theme="@style/Tipografia"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/marginbottom_menu"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/ripple_effect"
+                android:onClick="goDatosGenerales"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+                android:paddingVertical="@dimen/paddingvertical_menu">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/datosgeneralesicono" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/padding_menu"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:text="@string/datos_generales"
+                    />
+
+                <ImageView
+                    android:id="@+id/adelante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/icons8_adelante_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/marginbottom_menu"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/ripple_effect"
+                android:onClick="goConsulta"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+                android:paddingVertical="@dimen/paddingvertical_menu">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/consultaicono" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/padding_menu"
+                    android:layout_toEndOf="@+id/imageView1"
+                    android:text="@string/consulta" />
+
+                <ImageView
+                    android:id="@+id/adelante1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/icons8_adelante_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/marginbottom_menu"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/ripple_effect"
+                android:onClick="goDatosGenerales"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+                android:paddingVertical="@dimen/paddingvertical_menu">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/exploracionicono" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/padding_menu"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:text="@string/explo_fisica" />
+
+                <ImageView
+                    android:id="@+id/adelante2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/icons8_adelante_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/marginbottom_menu"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/ripple_effect"
+                android:onClick="goDatosGenerales"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/paddinghorizontal_menu"
+                android:paddingVertical="@dimen/paddingvertical_menu">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/diagnosticoicono" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/padding_menu"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:text="@string/diag_medico" />
+
+                <ImageView
+                    android:id="@+id/adelante3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/icons8_adelante_24" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>-->
+
+</android.support.design.widget.CoordinatorLayout>
+
+

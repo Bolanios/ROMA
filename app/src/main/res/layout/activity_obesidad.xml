@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ObesidadActivity">
+
+    <include layout="@layout/actionbar_toolbar"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/paddingViews">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/image_obesidad_desde"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/iconoobesidad3"
+                        style="@style/ImageForms"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/paddingViews">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/paddingvertical_menu_edittext">
+                            <ImageView
+                                android:id="@+id/sound_obesidad_familiares"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icons8_altavoz_24"
+                                android:onClick="sound"
+                                android:theme="@style/iconAltavoz"
+                                android:contentDescription="@string/obesidad_preg_fam"/>
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_familiares"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextInputEditText_dialog">
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/input_obesidad_familiares"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:paddingLeft="@dimen/paddingViews"
+                                    android:hint="@string/obesidad_preg_fam"
+                                    android:drawableRight="@drawable/icons8_flecha_ampliar_24"
+                                    android:focusable="false">
+                                </android.support.design.widget.TextInputEditText>
+
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/paddingvertical_menu_edittext">
+                            <ImageView
+                                android:id="@+id/sound_obesidad_usted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icons8_altavoz_24"
+                                android:onClick="sound"
+                                android:theme="@style/iconAltavoz"
+                                android:contentDescription="@string/obesidad_preg_diag"/>
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_usted"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextInputEditText_dialog">
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/input_obesidad_usted"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:paddingLeft="@dimen/paddingViews"
+                                    android:hint="@string/obesidad_preg_diag"
+                                    android:inputType="number"
+                                    android:drawableRight="@drawable/icons8_flecha_ampliar_24"
+                                    android:focusable="false"
+                                    >
+                                </android.support.design.widget.TextInputEditText>
+
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/paddingvertical_menu_edittext">
+                            <ImageView
+                                android:id="@+id/sound_obesidad_desde"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icons8_altavoz_24"
+                                android:onClick="sound"
+                                android:theme="@style/iconAltavoz"
+                                android:contentDescription="@string/obesidad_tiempo"/>
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_desde"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextInputEditText_dialog">
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/input_obesidad_desde"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:paddingLeft="@dimen/paddingViews"
+                                    android:hint="@string/obesidad_tiempo_hint"
+                                    android:drawableRight="@drawable/icons8_flecha_ampliar_24"
+                                    android:inputType="number">
+                                </android.support.design.widget.TextInputEditText>
+
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/paddingvertical_menu_edittext">
+                            <ImageView
+                                android:id="@+id/sound_obesidad_tipo_diagnostico"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icons8_altavoz_24"
+                                android:onClick="sound"
+                                android:theme="@style/iconAltavoz"
+                                android:contentDescription="@string/obesidad_preg_diagnostico_2"/>
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_tipo_diagnostico"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextInputEditText_dialog">
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/input_obesidad_tipo_diagnostico"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:paddingLeft="@dimen/paddingViews"
+                                    android:hint="@string/obesidad_preg_diagnostico_2"
+                                    android:drawableRight="@drawable/icons8_flecha_ampliar_24"
+                                    android:inputType="number"
+                                    android:focusable="false">
+                                </android.support.design.widget.TextInputEditText>
+
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/paddingvertical_menu_edittext">
+                            <ImageView
+                                android:id="@+id/sound_obesidad_tratamiento"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icons8_altavoz_24"
+                                android:onClick="sound"
+                                android:theme="@style/iconAltavoz"
+                                android:contentDescription="@string/obesidad_preg_tratamiento"/>
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_tratamiento"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextInputEditText_dialog">
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/input_obesidad_tratamiento"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/obesidad_preg_tratamiento"
+                                    android:inputType="textMultiLine"
+                                    android:minLines="3"
+                                    android:maxEms="3"
+                                    android:gravity="top|left"
+                                    android:scrollHorizontally="false"
+                                    android:background="@drawable/edittext_multiline"/>
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/paddingvertical_menu_edittext">
+                            <ImageView
+                                android:id="@+id/sound_obesidad_alimentos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icons8_altavoz_24"
+                                android:onClick="sound"
+                                android:theme="@style/iconAltavoz"
+                                android:contentDescription="@string/obesidad_preg_alimentacion"/>
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_alimentos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextInputEditText_dialog">
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/input_obesidad_alimentos"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:paddingLeft="@dimen/paddingViews"
+                                    android:hint="@string/obesidad_preg_alimentacion"
+                                    android:drawableRight="@drawable/icons8_flecha_ampliar_24"
+                                    android:focusable="false">
+                                </android.support.design.widget.TextInputEditText>
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/paddingvertical_menu_edittext">
+                            <ImageView
+                                android:id="@+id/sound_obesidad_nivel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icons8_altavoz_24"
+                                android:onClick="sound"
+                                android:theme="@style/iconAltavoz"
+                                android:contentDescription="@string/obesidad_preg_nivel_obesidad"/>
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_nivel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/TextInputEditText_dialog">
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/input_obesidad_nivel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:paddingLeft="@dimen/paddingViews"
+                                    android:hint="@string/obesidad_preg_nivel_obesidad"
+                                    android:drawableRight="@drawable/icons8_flecha_ampliar_24"
+                                    android:focusable="false">
+                                </android.support.design.widget.TextInputEditText>
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputEditText_MultiLine"
+                    >
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/notas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/notas"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:maxEms="10"
+                        android:gravity="top|left"
+                        android:scrollHorizontally="false"
+                        android:background="@drawable/edittext_multiline"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:layout_marginTop="@dimen/paddingvertical_menu"
+                    android:onClick="onGuardar"
+                    android:text="@string/guardar"
+                    android:theme="@style/buttonTheme" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+

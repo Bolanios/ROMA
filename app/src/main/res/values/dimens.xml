@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_buttom">32dp</dimen>
+    <dimen name="paddingViews">16dp</dimen>
+    <dimen name="marginbottom_menu">2dp</dimen>
+    <dimen name="paddinghorizontal_menu">16dp</dimen>
+    <dimen name="paddingvertical_menu">10dp</dimen>
+    <dimen name="paddingvertical_menu_edittext">10dp</dimen>
+    <dimen name="textsize_menus">16sp</dimen>
+    <dimen name="textsize_partes">10sp</dimen>
+    <dimen name="editText_textSize_datos">14sp</dimen>
+    <dimen name="materialBetterSpinnner">5dp</dimen>
+
+</resources>

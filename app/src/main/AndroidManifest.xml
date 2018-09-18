@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.watermelon.omarb.roma">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconoapp_azul"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".baseActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListDialog"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name=".View.ConsultaActivity"
+            android:parentActivityName=".View.MenuPrincipalActivity" />
+        <activity android:name=".View.MenuPrincipalActivity" />
+        <activity
+            android:name=".View.DatosGeneralesActivity"
+            android:parentActivityName=".View.MenuPrincipalActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+        <activity
+            android:name=".View.PartesCuerpoActivity"
+            android:parentActivityName=".View.ConsultaActivity" />
+        <activity
+            android:name=".View.CabezaActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.PartesCuerpoActivity" />
+        <activity
+            android:name=".View.CuelloActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.PartesCuerpoActivity" />
+        <activity
+            android:name=".View.ToraxActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.PartesCuerpoActivity" />
+        <activity
+            android:name=".View.AbdomenActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.PartesCuerpoActivity" />
+        <activity
+            android:name=".View.GenitourinarioActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.PartesCuerpoActivity" />
+        <activity
+            android:name=".View.ExtremidadesActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.PartesCuerpoActivity" />
+        <activity
+            android:name=".View.FiebreActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.ConsultaActivity" />
+        <activity
+            android:name=".View.NauVomiActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.ConsultaActivity" />
+        <activity
+            android:name=".View.DiarreaActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.ConsultaActivity" />
+        <activity
+            android:name=".View.EmbarazoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.ConsultaActivity" />
+        <activity
+            android:name=".View.HipertensionActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.ConsultaActivity" />
+        <activity
+            android:name=".View.ObesidadActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.ConsultaActivity" />
+        <activity
+            android:name=".View.DiabetesActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.ConsultaActivity" />
+        <activity android:name=".View.ExploracionActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.MenuPrincipalActivity"/>
+        <activity
+            android:name=".View.DiagTraActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName=".View.MenuPrincipalActivity" />
+    </application>
+
+</manifest>
